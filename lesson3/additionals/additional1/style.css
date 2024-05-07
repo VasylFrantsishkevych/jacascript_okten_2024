@@ -1,0 +1,17 @@
+.users-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.user-block{
+    width: 40%;
+    border: 5px solid brown;
+    padding: 5px;
+}
+.address-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
