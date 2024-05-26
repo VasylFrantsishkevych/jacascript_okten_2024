@@ -1,0 +1,82 @@
+.hide {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+/*==TASK 3 =====*/
+.detail {
+    display: flex;
+    justify-content: center;
+}
+
+.detail a {
+    background: #49bd49;
+    padding: 8px 25px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.detail a:hover {
+    background: green;
+}
+
+/*==TASK 1, TASK 4======*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > div {
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px aquamarine;
+    background: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+button:hover {
+    background: aquamarine;
+}
+
+input {
+    border: none;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px aquamarine;
+    background: white;
+    font-size: 20px;
+    margin: 25px 5px;
+
+}
+input:focus {
+    outline: 2px solid #49bd49;
+    box-shadow: none;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.name {
+    border: 2px solid aquamarine;
+    padding: 8px;
+    width: 225px;
+    margin-bottom: 15px;
+}
+.card {
+    border: 2px solid aquamarine;
+    padding: 8px;
+    width: 40%;
+}
+
