@@ -1,0 +1,44 @@
+.users-container {
+   display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.users-container a {
+    text-decoration: none;
+    color: #0c061a;
+    font-weight: bold;
+}
+
+.users-container a:hover {
+    color: #e95d2a;
+}
+
+.container {
+    width: 100%;
+}
+.user-info {
+    width: 90%;
+    display: flex;
+    border: 2px solid #dbdde5;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.user-info-name {
+    width: 50%;
+    text-align: center;
+}
+.user-info-name:nth-child(1){
+    border-right: 2px solid #dbdde5;
+}
+.user-address {
+    width: 90%;
+    display: flex;
+    border: 2px  solid #dbdde5;
+    border-top: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.user-address-list {
+    width: 33%;
+}
