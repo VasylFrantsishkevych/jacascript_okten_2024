@@ -1,5 +1,6 @@
 // - взяти https://dummyjson.com/docs/carts та вивести інформацію про всі корзини. Відобразити всі поля кожної корзини.
 
+
 let containerBlock = document.getElementsByClassName('container')[0];
 let buttonPrev = document.getElementById('prev');
 let buttonNext = document.getElementById('next');
@@ -11,13 +12,13 @@ let getCarts = `${baseURL}/carts`;
 let page = 1;
 const cartsPerPage = 10;
 
-
-function fetching () {
+function rendering () {
     const skip = (page - 1) * cartsPerPage;
 
     let url = new URL(getCarts)
     url.searchParams.set('limit', cartsPerPage.toString())
     url.searchParams.set('skip', skip.toString())
+
     fetch(url)
         .then(res => res.json())
         .then(({carts, total}) => {
@@ -108,15 +109,15 @@ function fetching () {
 buttonNext.addEventListener('click', () => {
     window.scrollTo(0, 0);
     page++;
-    fetching();
+    rendering();
 
 })
 buttonPrev.addEventListener('click', () => {
     window.scrollTo(0, 0);
     page--;
-    fetching();
+    rendering();
 })
 
-fetching();
+rendering();
 
 
